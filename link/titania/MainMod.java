@@ -89,9 +89,25 @@ public class MainMod
 		        itemIDs[17] = config.get("Item", "Purgatory Legs", 2018).getInt() - 256;
 		        itemIDs[18] = config.get("Item", "Purgatory Boots", 2019).getInt() - 256;
 		        itemIDs[19] = config.get("Item", "Adamantine Helm", 2020).getInt() - 256;
-		        itemIDs[20] = config.get("Item", "Adamantine Chestplate", 2019).getInt() - 256;
-		        itemIDs[21] = config.get("Item", "Adamantine Leggings", 2021).getInt() - 256;
-		        itemIDs[22] = config.get("Item", "Adamantine Boots", 2022).getInt() - 256;
+		        itemIDs[20] = config.get("Item", "Adamantine Chestplate", 2021).getInt() - 256;
+		        itemIDs[21] = config.get("Item", "Adamantine Leggings", 2022).getInt() - 256;
+		        itemIDs[22] = config.get("Item", "Adamantine Boots", 2023).getInt() - 256;
+		        itemIDs[23] = config.get("Item", "Sea Helm", 2024).getInt() - 256;
+		        itemIDs[24] = config.get("Item", "Sea Chest", 2025).getInt() - 256;
+		        itemIDs[25] = config.get("Item", "Sea Leggings", 2026).getInt() - 256;
+		        itemIDs[26] = config.get("Item", "Sea Boots", 2027).getInt() - 256;
+		        itemIDs[27] = config.get("Item", "Flame Head", 2028).getInt() - 256;
+		        itemIDs[28] = config.get("Item", "Flame Chest", 2029).getInt() - 256;
+		        itemIDs[29] = config.get("Item", "Flame Leggings", 2030).getInt() - 256;
+		        itemIDs[30] = config.get("Item", "Flame Boots", 2031).getInt() - 256;
+		        itemIDs[31] = config.get("Item", "Giant Helm", 2032).getInt() - 256;
+		        itemIDs[32] = config.get("Item", "Giant Chest", 2033).getInt() - 256;
+		        itemIDs[33] = config.get("Item", "Giant Leggings", 2034).getInt() - 256;
+		        itemIDs[34] = config.get("Item", "Giant Boots", 2035).getInt() - 256;
+		        itemIDs[35] = config.get("Item", "Fiary Helm", 2036).getInt() - 256;
+		        itemIDs[36] = config.get("Item", "Fairy Chest", 2037).getInt() - 256;
+		        itemIDs[37] = config.get("Item", "Fairy Leggings", 2038).getInt() - 256;
+		        itemIDs[38] = config.get("Item", "Fairy Boots", 2039).getInt() - 256;
 		        
 		        config.save();
 		        
@@ -148,6 +164,67 @@ public class MainMod
 		        
 		        purgatoryBoots = (new ItemArmorPurgatory(itemIDs[18], purgatory, 3, 3).setUnlocalizedName("purgatoryBoots").setTextureName("titania:purgatoryBoots").setCreativeTab(CreativeTabs.tabCombat));
 		        LanguageRegistry.addName(purgatoryBoots, "Purgatory Boots");
+		        
+		        adamantineHelm = (new ItemArmorAdamantine(itemIDs[19], adamantine, 3, 0).setUnlocalizedName("adamantineHelm").setTextureName("titania:adamantineHelm").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(adamantineHelm, "Adamantine Helmet");
+		        
+		        adamantineChest = (new ItemArmorAdamantine(itemIDs[20], adamantine, 3, 1).setUnlocalizedName("adamantineChest").setTextureName("titania:adamantineChest").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(adamantineChest, "Adamantine Chestplate");
+		        
+		        adamantineLegs = (new ItemArmorAdamantine(itemIDs[21], adamantine, 3, 2).setUnlocalizedName("adamantineLegs").setTextureName("titania:adamantineLegs").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(adamantineLegs, "Adamantine Leggings");
+		        
+		        adamantineBoots = (new ItemArmorAdamantine(itemIDs[22], adamantine, 3, 3).setUnlocalizedName("adamantineBoots").setTextureName("titania:adamantineBoots").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(adamantineBoots, "Adamantine Boots");
+		        
+		        seaHelm = (new ItemArmorSea(itemIDs[23], sea, 3, 0).setUnlocalizedName("seaHelm").setTextureName("titania:seaHelm").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(seaHelm, "Sea Helm");
+		        
+		        seaChest = (new ItemArmorSea(itemIDs[24], sea, 3, 1).setUnlocalizedName("seaChest").setTextureName("titania:seaChest").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(seaChest, "Sea Chestplate");
+		        
+		        seaSkirt = (new ItemArmorSea(itemIDs[25], sea, 3, 2).setUnlocalizedName("seaSkirt").setTextureName("titania:seaSkirt").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(seaSkirt, "Sea Skirt");
+		        
+		        seaBoots = (new ItemArmorSea(itemIDs[26], sea, 3, 3).setUnlocalizedName("seaBoots").setTextureName("titania:seaBoots").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(seaBoots, "Sea Boots");
+		        
+		        flameHelm = (new ItemArmorFlame(itemIDs[27], flame, 3, 0).setUnlocalizedName("flameHelm").setTextureName("titania:flameHelm").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(flameHelm, "Flame Helmet");
+		        
+		        flameChest = (new ItemArmorFlame(itemIDs[28], flame, 3, 1).setUnlocalizedName("flameChest").setTextureName("titania:flameChest").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(flameChest, "Flame Chestplate");
+		        
+		        flameLegs = (new ItemArmorFlame(itemIDs[29], flame, 3, 2).setUnlocalizedName("flameLegs").setTextureName("titania:flameLegs").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(flameLegs, "Flame Leggings");
+		        
+		        flameBoots = (new ItemArmorFlame(itemIDs[30], flame, 3, 3).setUnlocalizedName("flameBoots").setTextureName("titania:flameBoots").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(flameBoots, "Flame Boots");
+		        
+		        giantHelm = (new ItemArmorGiant(itemIDs[31], giant, 3, 0).setUnlocalizedName("giantHelm").setTextureName("titania:giantHelm").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(giantHelm, "Giant Helm");
+		        
+		        giantChest = (new ItemArmorGiant(itemIDs[32], giant, 3, 1).setUnlocalizedName("giantChest").setTextureName("titania:giantChest").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(giantChest, "Giant Chestplate");
+		        
+		        giantLegs = (new ItemArmorGiant(itemIDs[33], giant, 3, 2).setUnlocalizedName("giantLegs").setTextureName("titania:giantLegs").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(giantLegs, "Giant Leggings");
+		        
+		        giantBoots = (new ItemArmorGiant(itemIDs[34], giant, 3, 3).setUnlocalizedName("giantBoots").setTextureName("titania:giantBoots").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(giantBoots, "Giant Boots");
+		        
+		        fairyHead = (new ItemArmorFairy(itemIDs[35], fairy, 3, 0).setUnlocalizedName("fairyHead").setTextureName("titania:fairyHead").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(fairyHead, "Fairy Headpiece");
+
+		        fairyChest = (new ItemArmorFairy(itemIDs[36], fairy, 3, 1).setUnlocalizedName("fairyChest").setTextureName("titania:fairyChest").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(fairyChest, "Fairy Chestplate");
+		        
+		        fairyLegs = (new ItemArmorFairy(itemIDs[37], fairy, 3, 2).setUnlocalizedName("fairyLegs").setTextureName("titania:fairyLegs").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(fairyLegs, "Fairy Leggings");
+		        
+		        fairyBoots = (new ItemArmorFairy(itemIDs[38], fairy, 3, 3).setUnlocalizedName("fairyBoots").setTextureName("titania:fairyBoots").setCreativeTab(CreativeTabs.tabCombat));
+		        LanguageRegistry.addName(fairyBoots, "Fairy Boots");
+		        
 			}
 	
 }

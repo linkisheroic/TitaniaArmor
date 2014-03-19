@@ -6,6 +6,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class ItemArmorGiant extends ItemArmor
@@ -24,10 +26,12 @@ public class ItemArmorGiant extends ItemArmor
 			 ItemStack legs = player.getCurrentItemOrArmor(2);
 			 ItemStack boots = player.getCurrentItemOrArmor(1); 
 			 
-			 if (helmet.getItem() == MainMod.flightEars && plate.getItem() == MainMod.flightPlate && legs.getItem() == MainMod.flightLeggings && boots.getItem() == MainMod.flightBoots) 
+			 if (helmet.getItem() == MainMod.giantHelm && plate.getItem() == MainMod.giantChest && legs.getItem() == MainMod.giantLegs && boots.getItem() == MainMod.giantBoots) 
 			 {
+				 player.addPotionEffect(new PotionEffect(Potion.damageBoost.getId(), 25, 10));
 				if(Keyboard.isKeyDown(Keyboard.KEY_1) && Keyboard.isKeyDown(Keyboard.KEY_LSHIFT))
 				{
+					
 					player.capabilities.allowFlying = false;
 					player.setCurrentItemOrArmor(4, null);
 					player.setCurrentItemOrArmor(3, new ItemStack(MainMod.titaniaChest));

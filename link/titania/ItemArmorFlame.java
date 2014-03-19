@@ -6,6 +6,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class ItemArmorFlame extends ItemArmor
@@ -26,8 +28,9 @@ public class ItemArmorFlame extends ItemArmor
 			 ItemStack legs = player.getCurrentItemOrArmor(2);
 			 ItemStack boots = player.getCurrentItemOrArmor(1); 
 			 
-			 if (helmet.getItem() == MainMod.flightEars && plate.getItem() == MainMod.flightPlate && legs.getItem() == MainMod.flightLeggings && boots.getItem() == MainMod.flightBoots) 
+			 if (helmet.getItem() == MainMod.flameHelm && plate.getItem() == MainMod.flameChest && legs.getItem() == MainMod.flameLegs && boots.getItem() == MainMod.flameBoots) 
 			 {
+				player.addPotionEffect(new PotionEffect(Potion.fireResistance.getId(), 25, 10));
 				if(Keyboard.isKeyDown(Keyboard.KEY_1) && Keyboard.isKeyDown(Keyboard.KEY_LSHIFT))
 				{
 					player.capabilities.allowFlying = false;

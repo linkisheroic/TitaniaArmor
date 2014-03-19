@@ -26,7 +26,7 @@ public class ItemArmorFairy extends ItemArmor
 			 ItemStack legs = player.getCurrentItemOrArmor(2);
 			 ItemStack boots = player.getCurrentItemOrArmor(1); 
 			 
-			 if (helmet.getItem() == MainMod.flightEars && plate.getItem() == MainMod.flightPlate && legs.getItem() == MainMod.flightLeggings && boots.getItem() == MainMod.flightBoots) 
+			 if (helmet.getItem() == MainMod.fairyHead && plate.getItem() == MainMod.fairyChest && legs.getItem() == MainMod.fairyLegs && boots.getItem() == MainMod.fairyBoots) 
 			 {
 				if(Keyboard.isKeyDown(Keyboard.KEY_1) && Keyboard.isKeyDown(Keyboard.KEY_LSHIFT))
 				{
